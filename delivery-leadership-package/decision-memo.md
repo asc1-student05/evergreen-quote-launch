@@ -1,29 +1,35 @@
-# Decision Memo: _short title here_
+## Decision Memo: Launch Week Scope Management
 
-> Copy to `delivery-leadership-package/decision-memo.md`. Target length: ~250 words. Write for a non-technical reader. Name the options you **rejected**, not just the one you picked.
+Date: Tuesday
+Author: Jyoti Kumari
+Decision Area: Launch-week scope and readiness
 
-**Date:**
-**Author:** _your name_
-**Decision area:** _e.g., Day 2 scope tradeoff_
+### Context
 
-## Context
+Two days before launch, Marketing requested several changes including Life-first messaging, changing the default quote type from Auto to Life, and adding Renters coverage. At the same time, the team needed to remain focused on delivering a wired, tested, containerized solution and maintaining launch readiness.
 
-_What was the situation that forced a choice? 2–3 sentences._
+### Options Considered
 
-## Options considered
+- **Option A: Approve all requests.**
+  Pros: Stakeholders receive everything requested.
+  Cons: Introduces significant launch risk, additional testing effort, and potential delivery delays.
 
-1. **Option A: _name_.** _Pros / cons in plain English._
-2. **Option B: _name_.** _Pros / cons._
-3. **Option C: _name_.** _Pros / cons._ (Optional.)
+- **Option B: Approve content changes only and route application code changes for review.**
+  Pros: Supports stakeholder needs while protecting launch stability.
+  Cons: Not all requests are completed immediately.
 
-## Recommendation
+- **Option C: Reject all requests until after launch.**
+  Pros: Eliminates launch-week change risk.
+  Cons: Misses an opportunity to support stakeholder priorities.
 
-_Which option. One paragraph._
+### Recommendation
 
-## Why
+Choose Option B. Approve landing page content updates owned by the delivery team, route the Auto-to-Life application change to the engineering team for review, and defer Renters coverage until after launch. This approach balances stakeholder needs with delivery commitments and minimizes launch risk.
 
-_The single most important reason, named in customer or business terms, not technical ones._
+### Why
 
-## What would change my mind
+The most important goal is delivering a stable and reliable customer experience on launch day. Protecting launch readiness provides more business value than introducing additional functionality at the last minute.
 
-_If X happened by Y date, I would revisit this._
+### What Would Change My Mind
+
+If engineering review confirmed the change was fully tested, low risk, and could be completed without affecting launch readiness before the final release checkpoint, the request could be reconsidered.

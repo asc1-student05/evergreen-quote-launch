@@ -60,6 +60,25 @@
 <td>Prioritize required lab objectives, track decisions in the project board, and defer non-required features.</td>
 <td>Mandatory deliverables are incomplete within one day of the scheduled milestone.</td>
 </tr>
+<tr>
+<td>R6</td>
+<td>Late marketing requests (Life-first messaging, Auto to Life default change, Renters coverage) introduce launch-week scope creep and may impact delivery commitments.</td>
+<td>Jyoti</td>
+<td>H</td>
+<td>M</td>
+<td>Approve content-only updates, route code changes to engineering ownership, and defer non-essential features until after launch.</td>
+<td>Additional pre-launch requests begin affecting committed launch deliverables or timelines.</td>
+</tr>
+
+<tr>
+<td>R7</td>
+<td>Shared demo environment instability could create confusion about launch readiness and stakeholder confidence.</td>
+<td>Jyoti</td>
+<td>M</td>
+<td>H</td>
+<td>Verify local cluster health, monitor CI, communicate ownership to the Platform Team, and maintain a documented local demo plan.</td>
+<td>Shared environment outage continues without owner engagement or impacts the planned local demo environment.</td>
+</tr>
 
 </table>
 
