@@ -103,7 +103,7 @@ Find it in this repo:
   screen.
 - `api/test/`: the safety net. Seven tests, green from Day 1, and they run
   again in CI on every push.
-- `api/src/seed.js`: the six known quotes, with historical premiums quoted
+- `api/src/seed.js`: the eight known quotes, with historical premiums quoted
   under an older rate table. That is normal for saved quotes; the API computes
   fresh premiums for new ones.
 - `api/.env`: configuration travels by environment variable. The same names

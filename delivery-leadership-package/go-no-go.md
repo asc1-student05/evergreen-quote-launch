@@ -1,27 +1,28 @@
-# Go / No-Go: Launch Decision
+# Go / No-Go Recommendation
 
-> Copy to `delivery-leadership-package/go-no-go.md`. This is the call for Friday's launch demo. Make it **from** the CI result, not in spite of it.
+## Recommendation
 
-**Date / time:**
-**Decision:** ☐ GO   ☐ NO-GO   ☐ GO WITH CONDITIONS
+GO
 
-## CI evidence
+## Evidence
 
-- Latest run on `delivery/lead` (both jobs): _green / red_  ·  link: _paste URL_
-- Workflow file: `.github/workflows/ci.yml`
-- What the workflow actually checked: _name the steps_
+- Local Kubernetes environment is healthy
+- Three API pods are running
+- MongoDB is running
+- CI pipeline is green
+- API tests pass
+- Client build and type-check pass
 
-## What "GO" would mean
+## Risks
 
-- Merge `delivery/lead` → `main`, squash, delete branch.
-- Tag the merge commit `launch`.
+- Shared demo environment incident remains open with Platform Team
 
-## What "NO-GO" would mean
+## Mitigation
 
-- Hold the merge until: _condition_.
-- Owner of that condition: _name_.
-- Re-evaluate at: _time_.
+- Friday demo runs locally
+- Incident owner identified
+- Local environment validated
 
-## My call
+## Decision
 
-_2–3 sentences. State the call. Name the *one* thing that drove it. Name what would flip it._
+Proceed with launch preparation.

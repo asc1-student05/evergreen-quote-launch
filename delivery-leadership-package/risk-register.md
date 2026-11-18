@@ -79,6 +79,26 @@
 <td>Verify local cluster health, monitor CI, communicate ownership to the Platform Team, and maintain a documented local demo plan.</td>
 <td>Shared environment outage continues without owner engagement or impacts the planned local demo environment.</td>
 </tr>
+<tr>
+<td>R8</td>
+<td>Configuration differences between local, container, and Kubernetes environments cause the application to behave differently during the final demo.</td>
+<td>Jyoti</td>
+<td>M</td>
+<td>H</td>
+<td>Validate API, MongoDB connectivity, GraphQL, and quote persistence in the Kubernetes cluster after every deployment change.</td>
+<td>Functionality works locally but fails in Kubernetes or after deployment updates.</td>
+</tr>
+
+<tr>
+<td>R9</td>
+<td>Local demo environment becomes unavailable on launch day due to laptop, cluster, browser, or port-forwarding issues.</td>
+<td>Jyoti</td>
+<td>M</td>
+<td>H</td>
+<td>Perform a full demo rehearsal using the local Kind cluster, verify port-forwarding commands, and keep recovery steps documented.</td>
+<td>Demo rehearsal fails, cluster becomes unavailable, or critical services cannot be reached locally.</td>
+</tr>
+
 
 </table>
 
