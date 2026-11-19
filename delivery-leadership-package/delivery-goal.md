@@ -1,21 +1,24 @@
-# Delivery Goal: Evergreen Quote
+## Delivery Goal: Evergreen Quote Launch
 
-> Copy this file into `delivery-leadership-package/delivery-goal.md`. One sentence. Read it back to yourself. Then to your pair. Then to someone who wasn't in the room. If they can repeat it, it's good.
+### Goal
 
-## Goal
+Deliver a production-ready Evergreen Quote experience that connects the React client, Express API, and MongoDB so customers can accurately create, save, and retrieve insurance quotes through a tested, containerized, and deployable solution.
 
-> _One sentence here._
-
-## "Done" looks like
+### "Done" looks like
 
 - The quote page loads its recent quotes from the API, and a saved quote survives a reload.
 - The estimate on screen and the saved premium agree, at the launch rates.
-- `npm test` (API) and `npm run type-check` + `npm run build` (client) pass; both CI jobs on the merge commit are **green**.
+- npm test (API) and npm run type-check + npm run build (client) pass; both CI jobs on the merge commit are green.
 - The containerized API serves the wired app, and the cluster demo shows three API pods behind one Service.
 - The landing page carries the launch banner and points at the app.
 - A reviewed PR is merged, branch deleted.
-- `delivery-leadership-package/` is complete and committed.
+- delivery-leadership-package/ is complete and committed.
 
-## Out of scope (this week)
+### Out of scope (this week)
 
-- _What you are intentionally not doing._
+- Customer account management
+- Policy purchasing workflows
+- Production cloud hosting
+- Advanced analytics and reporting
+- Mobile applications
+- Additional insurance products outside the supplied requirements

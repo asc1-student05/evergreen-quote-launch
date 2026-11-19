@@ -26,7 +26,7 @@ npm run seed
 npm run dev
 ```
 
-Then `curl http://localhost:3000/api/quotes` shows the six seeded quotes.
+Then `curl http://localhost:3000/api/quotes` shows the eight seeded quotes.
 
 The client:
 

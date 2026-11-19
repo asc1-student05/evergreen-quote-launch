@@ -2,7 +2,7 @@
 import mongoose from "mongoose";
 import { randomUUID } from "node:crypto";
 
-// Quote ids are readable strings ("q1".."q6" for the seeded quotes, UUIDs for
+// Quote ids are readable strings ("q1".."q8" for the seeded quotes, UUIDs for
 // new ones) so they stay easy to curl and easy to talk about in a review.
 const quoteSchema = new mongoose.Schema(
   {
