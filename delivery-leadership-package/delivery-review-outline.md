@@ -23,9 +23,10 @@ Successfully connected the React application to the API and MongoDB, enabled Gra
 - GitHub Actions CI workflow enabled.
 - Amazon EKS deployment completed and verified.
 - Production-ready application with automated validation.
-- Link to merged Pull Request.
-- Link to green CI run.
+- Link to merged Pull Request: https://github.com/asc1-student05/evergreen-quote-launch/pull/11
+- Link to green CI run.https://github.com/asc1-student05/evergreen-quote-launch/actions/runs/44598402034/job/135822844247
 - Screenshots of EKS deployment.
+![alt text](<Screenshot 2026-11-19 121710.png>) ![alt text](<Screenshot 2026-11-19 121631.png>)
 
 ---
 
