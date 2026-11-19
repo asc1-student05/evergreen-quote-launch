@@ -2,42 +2,107 @@
 
 Date: Wednesday
 Author: Jyoti Kumari
-Decision Area: Launch readiness, scope control, and responsible use of AI tools
+Decision Area: Scope Control, Launch Readiness, and AI-Assisted Delivery
 
 ### Context
 
-During launch week, Marketing requested Life-first messaging, a default coverage change from Auto to Life, and consideration of Renters coverage. At the same time, the team completed API integration, containerization, Kubernetes deployment, CI/CD setup, and launch preparation activities. Copilot was used to assist with development tasks and generated code updates, comments, and supporting changes across multiple files. The challenge was determining which changes should be accepted immediately and which should be reviewed or deferred to protect launch readiness.
+During launch week, Marketing requested changes to support a Life-first launch message, including changes to landing-page content, changing the default quote type from Auto to Life, and adding Renters coverage. At the same time the team was completing API integration, GraphQL enablement, Docker containerization, Kubernetes deployment, CI/CD implementation, and launch preparation activities.
+
+Copilot was used during implementation and successfully generated updates across multiple files, identified related dependencies, suggested code changes, and improved comments and documentation. All generated changes were reviewed and validated before acceptance.
 
 ### Options Considered
 
-- **Option A: Accept all requested and AI-generated changes immediately.**
-  - Pros: Faster delivery and maximum stakeholder satisfaction.
-  - Cons: Increased launch risk, additional testing requirements, and potential introduction of unintended changes.
+#### Option A – Accept all requests and generated changes immediately
 
-- **Option B: Accept business-content updates, validate Copilot-generated changes, and defer non-essential feature requests.**
-  - Pros: Supports stakeholder objectives while maintaining quality, ownership, and launch stability.
-  - Cons: Some requested enhancements are postponed until after launch.
+Pros:
+- Maximum responsiveness
+- Fast delivery
 
-- **Option C: Freeze all changes until after launch.**
-  - Pros: Lowest change risk.
-  - Cons: Misses opportunities to improve launch messaging and demonstrate responsiveness to stakeholders.
+Cons:
+- Increased launch risk
+- Additional testing effort
+- Potential unintended side effects
+
+#### Option B – Accept content changes, review generated code, and defer non-essential features
+
+Pros:
+- Supports stakeholder priorities
+- Maintains launch quality and stability
+- Preserves delivery commitments
+
+Cons:
+- Some requests postponed until after launch
+
+#### Option C – Freeze all changes until after launch
+
+Pros:
+- Lowest risk
+
+Cons:
+- Reduced responsiveness to stakeholder needs
+- Missed opportunity to improve launch messaging
 
 ### Recommendation
 
-Choose Option B. Approve landing-page content updates, validate all Copilot-generated code and comment changes before accepting them, route application behavior changes to the engineering team for review, and defer Renters coverage until after launch. This approach balances stakeholder expectations with delivery stability and protects the launch commitment.
+Choose Option B.
+
+- Approve landing page content updates.
+- Review and validate all Copilot-generated changes before acceptance.
+- Route application behavior changes to engineering ownership.
+- Defer Renters coverage until after launch.
+
+### Decision
+
+Approved:
+
+- Launch banner updates
+- Landing page messaging updates
+- Copilot-assisted implementation changes after validation
+
+Deferred:
+
+- Renters coverage
+
+Routed for Engineering Review:
+
+- Auto → Life default quote selection change
 
 ### Why
 
-The highest business priority is a successful and reliable launch. AI-generated changes can accelerate delivery, but all generated output must still be reviewed, tested, and validated before becoming part of a release. Launch readiness is more valuable than delivering additional unverified functionality.
+The primary objective is a stable, launch-ready solution. Every code change, whether human-written or AI-generated, requires validation before release. The team received the benefits of AI acceleration while maintaining change control and launch quality.
 
 ### Trade-Offs
 
-- Gained faster implementation through Copilot assistance.
-- Increased review effort to validate generated changes.
-- Accepted marketing content updates.
-- Deferred non-essential functionality to reduce launch risk.
-- Preserved schedule and delivery confidence while still responding to stakeholder requests.
+Benefits:
+
+- Faster implementation through Copilot assistance
+- Improved productivity
+- Faster identification of impacted files
+- Better documentation and comments
+
+Costs:
+
+- Additional review effort
+- Time spent validating generated output
+- Some stakeholder requests delayed until after launch
+
+### Outcome
+
+The project successfully achieved:
+
+- React Client → API integration
+- MongoDB persistence
+- GraphQL enablement
+- Docker containerization
+- Kubernetes deployment
+- CI/CD validation
+- Launch readiness review
 
 ### What Would Change My Mind
 
-If engineering review, testing, CI validation, and stakeholder approval confirmed additional requested changes could be implemented safely without impacting launch readiness, those items could be reconsidered for inclusion before release.
+Additional functionality could be added before launch if:
+
+- Engineering review confirms low risk
+- CI remains green
+- Required testing is completed
+- Launch readiness is not impacted
